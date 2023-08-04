@@ -1,5 +1,6 @@
 {
 	"name": "labeddit-frontend",
+  "homepage": "https://felipeg-almeida.github.io/labeddit-frontend/",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
