@@ -8,7 +8,7 @@ export default function Router() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<LoginPage />} />
+				<Route path="/labeddit-frontend/" element={<LoginPage />} />
 				<Route path="/signUp" element={<SignUpPage />} />
 				<Route path="/posts" element={<PostsPage />} />
 				<Route path="/comments" element={<CommentPage />} />

@@ -1,5 +1,5 @@
 export const goToLoginPage = (navigate) => {
-	navigate('/');
+	navigate('/labeddit-frontend/');
 };
 
 export const goToSignUpPage = (navigate) => {
