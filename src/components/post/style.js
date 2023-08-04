@@ -4,10 +4,15 @@ export const PostContainer = styled.li`
 	background-color: #fbfbfb;
 	border: 1px solid #e0e0e0;
 	border-radius: 12px;
+	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	padding: 9px;
 	row-gap: 18px;
+
+	&:hover {
+		border-color: #a8a8a8;
+	}
 `;
 
 export const User = styled.small`
@@ -38,6 +43,10 @@ export const RoundContainer = styled.div`
 	height: 28px;
 	justify-content: space-between;
 	padding: 4.7px 10px;
+
+	&:hover {
+		background-color: #ededed;
+	}
 `;
 
 export const LikesComments = styled.div`
@@ -51,11 +60,16 @@ export const Button = styled.button`
 	border: 0.8px solid #ececec;
 	border-radius: 28px;
 	color: #6f6f6f;
+	cursor: pointer;
 	display: inline-block;
 	font-family: 'IBM Plex Sans', sans-serif;
 	font-size: 0.875rem;
 	height: 39.4px;
 	padding: 4.7px 10px;
+
+	&:hover {
+		background-color: #ededed;
+	}
 `;
 
 export const DeleteDiv = styled.div`

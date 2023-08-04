@@ -24,6 +24,11 @@ export const InputField = styled.input`
 		top: 5px;
 		font-size: 10px;
 	}
+
+	@media screen and (min-width: 768px){
+		font-size: 0.8rem;
+		height: 50px;  
+	}
 `;
 
 export const Label = styled.label`

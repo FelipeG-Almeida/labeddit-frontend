@@ -6,6 +6,16 @@ export const MainContainer = styled.main`
 	height: 100%;
 	justify-content: space-around;
 	width: 100%;
+
+	@media screen and (min-width: 768px) {
+		justify-content: center;
+		margin: 0 auto;
+		width: 50%;
+	}
+
+	@media screen and (min-width: 1024px) {
+		width: 40%;
+	}
 `;
 
 export const TitleContainer = styled.div`
@@ -33,6 +43,10 @@ export const Form = styled.form`
 	row-gap: 56px;
 	flex-direction: column;
 	padding: 0 32px;
+
+	@media screen and (min-width: 768px) {
+		row-gap: 28px;
+	}
 `;
 
 export const Inputs = styled.div`
@@ -52,12 +66,23 @@ export const Buttons = styled.div`
 export const LoginButton = styled.input`
 	background: linear-gradient(90deg, var(--gradiente1), var(--gradiente2));
 	color: #fff;
+	cursor: pointer;
 	border: none;
 	border-radius: 27px;
 	height: 50px;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 1.125rem;
 	font-weight: 700;
+	transition: 0.25s all;
+
+	&:hover {
+		box-shadow: var(--gradiente1) 0px 2px 16px 0px;
+		transform: translateY(-0.25em);
+	}
+
+	@media screen and (min-width: 768px) {
+		font-size: 0.9rem;
+	}
 `;
 
 export const Line = styled.hr`
@@ -70,12 +95,23 @@ export const Line = styled.hr`
 export const SignUpButton = styled.button`
 	background-color: #fff;
 	color: var(--laranja);
+	cursor: pointer;
 	border: 1px solid var(--laranja);
 	border-radius: 27px;
 	height: 50px;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 1.125rem;
 	font-weight: 700;
+	transition: 0.25s all;
+
+	&:hover {
+		box-shadow: var(--gradiente2) 0px 2px 0px 0px;
+		transform: translateY(-0.25em);
+	}
+
+	@media screen and (min-width: 768px) {
+		font-size: 0.9rem;
+	}
 `;
 
 export const Error = styled.span`

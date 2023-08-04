@@ -73,6 +73,7 @@ export default function PostComponent({ post }) {
 	};
 
 	const handleEditClick = (event) => {
+		setEditedContent(post.content)
 		event.stopPropagation();
 		setEditing(true);
 	};

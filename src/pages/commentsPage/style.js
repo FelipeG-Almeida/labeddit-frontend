@@ -15,6 +15,7 @@ export const Logo = styled.img`
 
 export const Logout = styled.a`
 	color: #4088cb;
+	cursor: pointer;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 1.125rem;
 	font-weight: 600;
@@ -24,6 +25,11 @@ export const Main = styled.main`
 	display: flex;
 	flex-direction: column;
 	padding: 32px;
+
+	@media screen and (min-width: 768px) {
+		margin: 0 auto;
+		width: 55%;
+	}
 `;
 
 export const WriteComment = styled.div`
@@ -54,12 +60,22 @@ export const NewComment = styled.textarea`
 export const NewCommentButton = styled.button`
 	background: linear-gradient(90deg, var(--gradiente1), var(--gradiente2));
 	color: #fff;
+	cursor: pointer;
 	border: none;
 	border-radius: 12px;
 	height: 50px;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 1.125rem;
 	font-weight: 700;
+	transition: 0.25s all;
+
+	&:hover {
+		box-shadow: var(--gradiente1) 0px 2px 16px 0px;
+	}
+
+	@media screen and (min-width: 768px) {
+		font-size: 0.9rem;
+	}
 `;
 
 export const Line = styled.hr`

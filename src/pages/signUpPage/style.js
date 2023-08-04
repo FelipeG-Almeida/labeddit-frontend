@@ -16,6 +16,7 @@ export const Logo = styled.img`
 
 export const Login = styled.a`
 	color: #4088cb;
+	cursor: pointer;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 1.125rem;
 	font-weight: 600;
@@ -27,6 +28,16 @@ export const Main = styled.main`
 	justify-content: space-between;
 	padding: 32px;
 	height: calc(100% - 64px - 50px);
+
+	@media screen and (min-width: 768px) {
+		justify-content: space-around;
+		margin: 0 auto;
+		width: 50%;
+	}
+
+	@media screen and (min-width: 1024px) {
+		width: 40%;
+	}
 `;
 
 export const Title = styled.h1`
@@ -41,6 +52,10 @@ export const Form = styled.form`
 	display: flex;
 	flex-direction: column;
 	row-gap: 65px;
+
+	@media screen and (min-width: 768px) {
+		row-gap: 16px;
+	}
 `;
 
 export const Buttons = styled.div`
@@ -71,12 +86,23 @@ export const Span = styled.span`
 export const SignUpButton = styled.button`
 	background: linear-gradient(90deg, var(--gradiente1), var(--gradiente2));
 	color: #fff;
+	cursor: pointer;
 	border: none;
 	border-radius: 27px;
     height: 50px;
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 1.125rem;
 	font-weight: 700;
+	transition: 0.25s all;
+
+	&:hover {
+		box-shadow: var(--gradiente1) 0px 2px 16px 0px;
+		transform: translateY(-0.25em);
+	}
+
+	@media screen and (min-width: 768px) {
+		font-size: 0.9rem;
+	}
 `;
 
 export const AgreeDiv = styled.div`
