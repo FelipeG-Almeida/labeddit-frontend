@@ -11,7 +11,7 @@
 
 [https://felipeg-almeida.github.io/labeddit-frontend/](https://felipeg-almeida.github.io/labeddit-frontend/)
 
-  
+Repositório Backend: [https://github.com/FelipeG-Almeida/labeddit-backend](https://github.com/FelipeG-Almeida/labeddit-backend)
   
 <h2>🧐 Funcionalidades</h2>
 
